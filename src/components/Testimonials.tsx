@@ -9,38 +9,41 @@ const Testimonials = () => {
       name: "María González",
       location: "Quito",
       rating: 5,
-      comment: "Comida espectacular, entrega rápida y un servicio impecable. El ceviche de camarón es simplemente delicioso. ¡Definitivamente volveré!",
-      icon: <FaStar className="text-yellow-400" />
+      comment:
+        "Comida espectacular, entrega rápida y un servicio impecable. El ceviche de camarón es simplemente delicioso. ¡Definitivamente volveré!",
+      icon: <FaStar className="text-yellow-400" />,
     },
     {
       id: 2,
       name: "Carlos Mendoza",
       location: "Guayaquil",
       rating: 5,
-      comment: "La fritada estaba increíble, exactamente como la hacía mi abuela. El sabor auténtico y la presentación fueron perfectos.",
-      icon: <FaStar className="text-yellow-400" />
+      comment:
+        "La fritada estaba increíble, exactamente como la hacía mi abuela. El sabor auténtico y la presentación fueron perfectos.",
+      icon: <FaStar className="text-yellow-400" />,
     },
     {
       id: 3,
       name: "Ana Rodríguez",
       location: "Cuenca",
       rating: 5,
-      comment: "Excelente atención al cliente y comida de primera calidad. El encebollado me transportó directamente a mi infancia. ¡Recomendado al 100%!",
-      icon: <FaStar className="text-yellow-400" />
-    }
+      comment:
+        "Excelente atención al cliente y comida de primera calidad. El encebollado me transportó directamente a mi infancia. ¡Recomendado al 100%!",
+      icon: <FaStar className="text-yellow-400" />,
+    },
   ];
 
   return (
     <section id="testimonios" className="py-20 bg-gray-50 font-inter">
       <div className="container mx-auto px-6">
-        
         {/* Título */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Lo Que Dicen Nuestros Clientes
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            La satisfacción de nuestros clientes es nuestro mayor orgullo. Descubre por qué nos eligen una y otra vez.
+            La satisfacción de nuestros clientes es nuestro mayor orgullo.
+            Descubre por qué nos eligen una y otra vez.
           </p>
         </div>
 
@@ -52,7 +55,6 @@ const Testimonials = () => {
               className="p-6 bg-white shadow-lg rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               <CardContent className="p-0 flex flex-col items-center">
-                
                 {/* Icono */}
                 <div className="text-5xl text-[#D94F2A] mb-4">
                   {testimonial.icon}
@@ -60,7 +62,7 @@ const Testimonials = () => {
 
                 {/* Comentario */}
                 <blockquote className="text-gray-700 text-center italic text-sm mb-6">
-                  "{testimonial.comment}"
+                  &quot;{testimonial.comment}&quot;
                 </blockquote>
 
                 {/* Nombre y ubicación */}
@@ -102,7 +104,6 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
